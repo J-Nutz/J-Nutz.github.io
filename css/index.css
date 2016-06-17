@@ -9,23 +9,73 @@ ul { padding: 0; }
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+/* Drop Down Menu */
+
 #menu {
+  list-style: none;
+  position: relative;
   text-align: center;
   background-color: rgb(255, 255, 51);
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 
+.menuLinks {
+  display: block;
+  color: #333;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  padding: 0 15px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
 .menuItems {
-  background-color: rgb(51, 153, 255);
   display: inline-block;
-  padding: 5px;
+  font-size: 18px;
+  background-color: rgb(51, 153, 255);
+  padding: 3px;
+  margin: 5px;
   border: 2px solid black;
   border-radius: 5px;
-  margin: 3px;
-  font-size: 22px;
 }
 
 .menuItems:hover {
   background-color: rgb(51, 102, 255);
 }
+
+.menuItems:hover > #subMenu {
+  display: inline-block;
+  position: relative;
+}
+
+#subMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0;
+}
+
+.subMenuLinks {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+.subMenuItems {
+  list-style: none;
+  float: none;
+  width: 200px;
+
+  background-color: rgb(51, 153, 255);
+  padding: 5px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.subMenuItems:hover {
+  background-color: rgb(51, 102, 255);
+}
+
+/* End Drop Down Menu */
