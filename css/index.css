@@ -1,36 +1,27 @@
 body { background-color: rgb(51, 153, 255); }
-h1 { margin: 0; }
 a { text-decoration: none; color: black; }
 ul { padding: 0; }
 
 #title {
+  margin: 7px;
   text-align: center;
-  font-size: 42px;
+  font-size: 48px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding: 3px 0px 8px, 0px;
 }
 
-/* Drop Down Menu */
-
 #menu {
-  list-style: none;
-  position: relative;
+  list-style-type: none;
+  margin: 2px;
+  padding: 3px;
+  overflow: hidden;
   text-align: center;
   background-color: rgb(255, 255, 51);
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 
-.menuLinks {
-  display: block;
-  color: #333;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 32px;
-  padding: 0 15px;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
-}
-
-.menuItems {
+.menuItem {
   display: inline-block;
   font-size: 18px;
   background-color: rgb(51, 153, 255);
@@ -40,42 +31,59 @@ ul { padding: 0; }
   border-radius: 5px;
 }
 
-.menuItems:hover {
+.menuItem:hover {
   background-color: rgb(51, 102, 255);
 }
 
-.menuItems:hover > #subMenu {
+.menuDdItem {
   display: inline-block;
-  position: relative;
+  font-size: 18px;
+  background-color: rgb(51, 153, 255);
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-#subMenu {
+.menuDdItem:hover {
+  background-color: rgb(51, 102, 255);
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  padding: 0;
+  background-color: #f9f9f9;
+  min-width: 120px;
 }
 
-.subMenuLinks {
-  line-height: 120%;
-  padding: 10px 15px;
+.dropdown-content a {
+  color: black;
+  padding: 6px 18px 6px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.subMenuItems {
-  list-style: none;
-  float: none;
-  width: 200px;
-
-  background-color: rgb(51, 153, 255);
-  padding: 5px;
-  margin: 10px;
-  font-size: 16px;
+.ddItems:hover {
+  background-color: #dddddd
 }
 
-.subMenuItems:hover {
-  background-color: rgb(51, 102, 255);
+.menuDdItem:hover .dropdown-content {
+  display: block;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
-/* End Drop Down Menu */
+#swLabel, #libLabel {
+  padding: 5px 0 0 8px;
+}
+
+#swLabel:hover, #libLabel:hover {
+  background-color: transparent;
+}

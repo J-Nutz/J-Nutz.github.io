@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,7 +7,8 @@
 
     <title>Jonah's Projects</title>
 
-    <meta name="description" content="The Website That Provides Downloads, How-Tos, and Everything Else You Could Want To Know About Jonah's Software">
+    <meta name="description" content="The Website That Provides Downloads,
+    How-Tos, and Everything Else You Could Want To Know About Jonah's Software">
     <meta name="author" content="Jonah Stieglitz">
 
     <!--[if lt IE 9]>
@@ -16,47 +18,39 @@
 
   <body>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <script src="js/index.js" async></script>
+    <script src="js/index.js"></script>
 
     <h1 id="title">Everything Nutz</h1>
 
-    <nav id="primary_nav_wrap">
-      <ul id="menu">
-        <!-- <li class="current-menu-item"><a href="#">Home</a></li> -->
-        <li class="menuItems"><a class="menuLinks" href="#">Menu 1</a>
-          <ul id="subMenu">
-            <li class="subMenuItems"><a class="subMenuLinks" href="#">Sub Menu 1</a></li>
-            <li class="subMenuItems"><a class="subMenuLinks" href="#">Sub Menu 2</a></li>
-            <li class="subMenuItems"><a class="subMenuLinks" href="#">Sub Menu 3</a></li>
-          </ul>
-        </li>
-        <li class="menuItems"><a class="menuLinks" href="#">Menu 2</a></li>
-        <li class="menuItems"><a class="menuLinks" href="#">Menu 3</a></li>
-      </ul>
-    </nav>
+    <ul id="menu">
+      <li class="menuItem">
+        <a class="menuLink" href="index.html">Home</a>
+      </li>
+      <li class="menuItem">
+        <a class="menuLink" href="#news">News</a>
+      </li>
+      <li class="menuDdItem">
+        <a href="javascript:void(0);" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a class="ddItems" id="swLabel" href="#">Software</a>
+          <a class="ddItems" href="#">RapIDE</a>
+          <a class="ddItems" href="#">RapIDE 2.0</a>
+          <a class="ddItems" href="#">Pak Traker</a>
+          <a class="ddItems" href="#">Day Developer</a>
+          <a class="ddItems" id="libLabel"href="#">Libraries</a>
+          <a class="ddItems" href="#">FileDB</a>
+        </div>
+      </li>
+      <li class="menuItem">
+        <a class="menuLink" href="#inProg">In Progress</a>
+      </li>
+      <li class="menuItem">
+        <a class="menuLink" href="#coolStuff">Cool Stuff</a>
+      </li>
+      <li class="menuItem">
+        <a class="menuLink" href="#socialMedia">Social Media</a>
+      </li>
+    </ul>
 
-    <!-- <nav id="menuNav">
-      <ul id="menu">
-        <li class="menuItems" id="projects">
-          <a href="html/projects.html">Projects</a>
-        </li>
-
-          <ul id="dropMenu">
-            <li class="dropMenuItems" id="RapIDE">
-              <a href="#">RapIDE</a>
-            </li>
-            <li class="dropMenuItems" id="RapIDE 2.0">
-              <a href="#">RapIDE 2.0</a>
-            </li>
-            <li class="dropMenuItems" id="Pak Traker">
-              <a href="#">Pak Traker</a>
-            </li>
-          </ul>
-
-        <li class="menuItems" id="about">
-          About
-        </li>
-      </ul>
-    </nav> -->
   </body>
 </html>
