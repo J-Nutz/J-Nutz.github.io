@@ -1,0 +1,171 @@
+html { width: 100%; height: 100%; }
+body { background-color: rgb(51, 153, 255); margin: 0;}
+a { text-decoration: none; color: black; }
+ul { margin: 0px; padding: 0; }
+
+#title {
+  margin: 7px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding: 3px 0px 8px, 0px;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 3px;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(255, 255, 51);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.menuItem {
+  display: inline-block;
+  font-size: 18px;
+  background-color: rgb(51, 153, 255);
+  padding: 3px 5px 3px 5px;
+  margin: 5px 10px 5px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.menuItem:hover {
+  background-color: rgb(51, 102, 255);
+}
+
+.menuDdItem {
+  display: inline-block;
+  font-size: 18px;
+  background-color: rgb(51, 153, 255);
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.menuDdItem:hover {
+  background-color: rgb(51, 102, 255);
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+}
+
+.ddItems {
+  color: rgb(69, 69, 69);
+  padding: 5px 18px 5px 18px;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  background-color: white;
+}
+
+.ddItems:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.menuDdItem:hover .dropdown-content {
+  display: block;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+#swLabel, #libLabel {
+  color: rgb(51, 102, 255);
+  border-bottom: 1px solid black;
+  padding: 5px 0px 3px 8px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+}
+
+#libLabel {
+  border-top: 1px solid black;
+}
+
+#smFooter {
+  padding: 5px;
+  background-color: rgb(255, 255, 51);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+#twitterLink, #githubLink {
+  margin-right: 15px;
+}
+
+#smContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smImage {
+  width: 28px;
+  height: 28px;
+  padding: 3px;
+}
+
+#githubLink {
+  color: white;
+  background-color: black;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#twitterLink {
+  color: white;
+  background-color: rgb(0, 172, 237);
+  padding: 2px;
+  border: 2px solid rgb(0, 172, 237);
+  border-radius: 5px;
+}
+
+#stackOverflowLink {
+  color: white;
+  margin-left: 1px;
+  background-color: rgb(254, 122, 21);
+  padding: 2px;
+  border: 2px solid rgb(254, 122, 21);
+  border-radius: 5px;
+}
+
+/*#dailyScheduleDiv, #weekOutlineDiv {
+  float: left;
+  width: 32%;
+}
+
+#messagesDiv {
+  float: right;
+  width: 33%;
+}*/
+
+#mbContainer {
+  margin: 0;
+}
+
+.mbCategories {
+  border: thin solid black;
+  margin: 0;
+
+  width: calc(100% / 3.04);
+  display: inline-block;
+}
+
+.mbCatTitle {
+  text-align: center;
+}
