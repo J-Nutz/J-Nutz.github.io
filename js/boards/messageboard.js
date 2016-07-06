@@ -1,13 +1,13 @@
-function MessagesBoard()
+function MessageBoard()
 {
   this.addMessage = function(msg)
   {
-    var newMessage = document.createElement("p");
+    var message = document.createElement("p");
     var msgContent = document.createTextNode(msg);
-    newMessage.appendChild(msgContent);
+    message.appendChild(msgContent);
 
     var messageContainer = document.getElementById("messagesDiv");
-    messageContainer.appendChild(newMessage);
+    messageContainer.appendChild(message);
   };
 
   this.render = function()
@@ -15,9 +15,4 @@ function MessagesBoard()
     this.addMessage("Update #1");
     this.addMessage("Update #2");
   };
-}
-
-var poop = function()
-{
-  console.log("NAICE!");
 }
