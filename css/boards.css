@@ -145,17 +145,19 @@ li a, .dropbtn {
 }
 
 #mbContainer {
-  margin: 0;
+  display:flex;
+  justify-content: space-between;
 }
 
 .mbCategories {
   border: thin solid black;
-  margin: 0;
-
-  width: calc(100% / 3.04);
-  display: inline-block;
+  margin: 12px;
+  padding: 4px;
+  clear: both;
+  width: 33%;
 }
 
-.mbCatTitle {
+.boardTitle {
+  margin: 3px;
   text-align: center;
 }

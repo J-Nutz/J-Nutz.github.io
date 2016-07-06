@@ -15,64 +15,64 @@
     <![endif]-->
   </head>
 
-  <body onload="poop();">
-    <link rel="stylesheet" type="text/css" href="../css/messageBoard.css"/>
-    <script src="../js/messageBoard/messageBoard.js"></script>
+  <body>
+    <link rel="stylesheet" type="text/css" href="../css/boards.css"/>
+    <script src="../js/boards/messageboard.js"></script>
 
     <h1 id="title">Everything Nutz</h1>
 
-    <ul id="menu">
-      <li class="menuItem">
-        <a class="menuLink" href="../index.html">Home</a>
-      </li>
-      <li class="menuItem">
-        <a class="menuLink" href="javascript:void(0)">Message Board</a>
-      </li>
-      <li class="menuDdItem">
-        <!-- "javascript:void(0)" -->
-        <a href="html/projects.html" class="dropbtn">Projects</a>
-        <div class="dropdown-content">
-          <a class="ddItems" id="swLabel" href="#">Software</a>
-          <a class="ddItems" href="#">RapIDE</a>
-          <a class="ddItems" href="#">RapIDE 2.0</a>
-          <a class="ddItems" href="#">Pak Traker</a>
-          <a class="ddItems" href="#">Day Developer</a>
-          <a class="ddItems" id="libLabel"href="#">Libraries</a>
-          <a class="ddItems" href="#">FileDB</a>
-        </div>
-      </li>
-      <li class="menuItem">
-        <a class="menuLink" href="html/inProgress.html">In Progress</a>
-      </li>
-      <li class="menuItem">
-        <a class="menuLink" href="html/coolStuff.html">Cool Stuff</a>
-      </li>
-    </ul>
+    <div id="menuContainer">
+      <ul id="menu">
+        <li class="menuItem">
+          <a class="menuLink" href="../index.html">Home</a>
+        </li>
+        <li class="menuItem">
+          <a class="menuLink" href="javascript:void(0)">Message Board</a>
+        </li>
+        <li class="menuDdItem">
+          <!-- "javascript:void(0)" -->
+          <a href="html/projects.html" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a class="ddItems" id="swLabel" href="#">Software</a>
+            <a class="ddItems" href="#">RapIDE</a>
+            <a class="ddItems" href="#">RapIDE 2.0</a>
+            <a class="ddItems" href="#">Pak Traker</a>
+            <a class="ddItems" href="#">Day Developer</a>
+            <a class="ddItems" id="libLabel"href="#">Libraries</a>
+            <a class="ddItems" href="#">FileDB</a>
+          </div>
+        </li>
+        <li class="menuItem">
+          <a class="menuLink" href="html/inProgress.html">In Progress</a>
+        </li>
+        <li class="menuItem">
+          <a class="menuLink" href="html/coolStuff.html">Cool Stuff</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- MESSAGE BOARD START -->
 
     <div id="mbContainer">
       <div id="dailyScheduleDiv" class="mbCategories">
-        <h2 class="mbCatTitle"> Daily Schedule </h2>
+        <h2 class="boardTitle"> Daily Schedule </h2>
         <p> Message 1 </p>
       </div>
 
-
       <div id="weekOutlineDiv" class="mbCategories">
-        <h2 class="mbCatTitle"> Week Outline </h2>
+        <h2 class="boardTitle"> Week Goals </h2>
         <p> Message 2 </p>
       </div>
 
-
       <div id="messagesDiv" class="mbCategories">
-        <h2 class="mbCatTitle"> Messages </h2>
+        <h2 class="boardTitle"> Messages </h2>
         <p> Message 3 </p>
       </div>
       <script>
-        var mb = new MessageBoard();
-        mb.render();
+        var messageBoard = new MessageBoard();
+        messageBoard.render();
       </script>
-      
+
     </div>
 
     <!-- MESSAGE BOARD STOP -->

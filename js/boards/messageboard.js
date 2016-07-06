@@ -1,4 +1,4 @@
-function MessageBoard()
+function MessagesBoard()
 {
   this.addMessage = function(msg)
   {
