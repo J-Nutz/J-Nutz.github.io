@@ -15,9 +15,9 @@
     <![endif]-->
   </head>
 
-  <body onload="messageBoard.render()">
+  <body onload="poop();">
     <link rel="stylesheet" type="text/css" href="../css/messageBoard.css"/>
-    <script src="../js/messageBoard/mbController.js"></script>
+    <script src="../js/messageBoard/messageBoard.js"></script>
 
     <h1 id="title">Everything Nutz</h1>
 
@@ -68,6 +68,11 @@
         <h2 class="mbCatTitle"> Messages </h2>
         <p> Message 3 </p>
       </div>
+      <script>
+        var mb = new MessageBoard();
+        mb.render();
+      </script>
+      
     </div>
 
     <!-- MESSAGE BOARD STOP -->

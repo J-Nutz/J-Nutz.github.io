@@ -1,20 +1,23 @@
-var messageBoard = new Object();
-
-messageBoard.render = function()
+function MessageBoard()
 {
-  messageBoard.renderDailySchedule();
+  this.addMessage = function(msg)
+  {
+    var newMessage = document.createElement("p");
+    var msgContent = document.createTextNode(msg);
+    newMessage.appendChild(msgContent);
+
+    var messageContainer = document.getElementById("messagesDiv");
+    messageContainer.appendChild(newMessage);
+  };
+
+  this.render = function()
+  {
+    this.addMessage("Update #1");
+    this.addMessage("Update #2");
+  };
 }
 
-messageBoard.renderDailySchedule = function()
+var poop = function()
 {
-  var dailyScheduleContainer = document.getElementById("dailyScheduleDiv");
-  var dailyScheduleBoard = document.createElement("p");
-  dailyScheduleBoard.innerHTML = "New P";
-
-  dailyScheduleContainer.appendChild(dailyScheduleBoard);
-}
-
-messageBoard.addMessage = function(msg)
-{
-
+  console.log("NAICE!");
 }
