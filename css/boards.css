@@ -95,8 +95,8 @@ li a, .dropbtn {
 }
 
 #smFooter {
-  padding: 5px;
   background-color: rgb(255, 255, 51);
+  padding: 5px 0px;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -153,18 +153,22 @@ li a, .dropbtn {
 }
 
 .mbCategories {
+  overflow-x: hidden;
   border: thin solid black;
-  margin: 12px;
-  padding: 6px 12px;
+  margin: 10px;
   clear: both;
   width: 33%;
 }
 
 .boardTitle {
+  margin: 0px;
+  padding: 5px 0px;
   width: 100%;
   font-size: x-large;
-  margin: 3px;
-  padding-bottom: 4px;
   text-align: center;
   border-bottom: 1px solid black;
+}
+
+#messagesList {
+  list-style-type: none;
 }

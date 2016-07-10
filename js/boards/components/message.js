@@ -14,6 +14,10 @@ function Message(text)
   this.applyStyle = function()
   {
     var message = document.getElementById(this.text);
-    message.style.margin = "10px 0px 10px 20px";
+    message.style.paddingLeft = "5%";
+    message.style.paddingTop = "10px";
+    message.style.paddingBottom = "10px";
+    message.style.width = "100%";
+    message.style.borderBottom = "1px solid black";
   };
 }
