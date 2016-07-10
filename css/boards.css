@@ -148,7 +148,6 @@ li a, .dropbtn {
 
 #mbContainer {
   display:flex;
-  justify-content: space-between;
 }
 
 .mbCategories {
