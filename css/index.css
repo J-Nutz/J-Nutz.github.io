@@ -81,17 +81,21 @@ li a, .dropbtn {
   border-radius: 5px;
 }
 
-#swLabel, #libLabel {
-  color: rgb(51, 102, 255);
+#compsLabel {
   border-bottom: 1px solid black;
+}
+
+#swLabel, #libLabel {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#swLabel, #libLabel, #compsLabel {
+  color: rgb(51, 102, 255);
   padding: 5px 0px 3px 8px;
   font-size: 20px;
   font-weight: bold;
   background-color: white;
-}
-
-#libLabel {
-  border-top: 1px solid black;
 }
 
 #smFooter {
