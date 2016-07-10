@@ -13,9 +13,8 @@ ul { margin: 0; padding: 0; }
 
 #menu {
   width: 100%;
-  overflow-x: hidden;
   list-style-type: none;
-  padding: 3px;
+  padding: 3px 0px;
   text-align: center;
   background-color: rgb(255, 255, 51);
   border-top: 3px solid black;
