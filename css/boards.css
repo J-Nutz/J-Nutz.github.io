@@ -13,6 +13,7 @@ ul { margin: 0; padding: 0; }
 
 #menu {
   width: 100%;
+  overflow-x: hidden;
   list-style-type: none;
   padding: 3px;
   text-align: center;
