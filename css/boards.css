@@ -160,6 +160,7 @@ li a, .dropbtn {
 }
 
 .boardTitle {
+  font-size: 1.8em;
   margin: 3px;
   padding-bottom: 4px;
   text-align: center;
