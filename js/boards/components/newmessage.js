@@ -50,17 +50,15 @@ function NewMessage(text)
     var updateBtnInst = document.getElementById(this.id + "UpdateBtn");
     var deleteBtnInst = document.getElementById(this.id + "DeleteBtn");
 
+    msgContainerInst.style.borderBottom = "1px solid black";
+    msgContainerInst.style.display = "inline-block";
 
-    msgInst.style.display = "inline-block";
     msgInst.style.margin = "0";
     msgInst.style.padding = "5px";
 
-    updateBtnInst.style.display = "inline-block";
     updateBtnInst.style.float = "right";
     updateBtnInst.style.verticalAlign = "middle";
 
-    deleteBtnInst.style.verticalAlign = "middle";
-    deleteBtnInst.style.display = "inline-block";
     deleteBtnInst.style.float = "right";
   };
 
