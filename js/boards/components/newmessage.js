@@ -5,6 +5,8 @@ function NewMessage(text)
   this.message = document.createElement("p");
   this.message.appendChild(document.createTextNode(text));
 
+  var btnContainer = document.createElement("div");
+
   var updateBtn = document.createElement("button");
   updateBtn.addEventListener("click", this.updateBtnAction);
   var updateBtnContent = document.createTextNode("Update");
@@ -20,6 +22,7 @@ function NewMessage(text)
     this.id = id;
     this.message.id = id;
     this.msgContainer.id = id + "Container";
+    btnContainer.id = id + "BtnContainer";
     updateBtn.id = id + "UpdateBtn";
     deleteBtn.id = id + "DeleteBtn";
   };
@@ -47,26 +50,39 @@ function NewMessage(text)
   {
     var msgContainerInst = document.getElementById(this.id + "Container");
     var msgInst = document.getElementById(this.id);
+    var btnContainerInst = document.getElementById(this.id + "BtnContainer");
     var updateBtnInst = document.getElementById(this.id + "UpdateBtn");
     var deleteBtnInst = document.getElementById(this.id + "DeleteBtn");
 
     msgContainerInst.style.borderBottom = "1px solid black";
-    msgContainerInst.style.display = "inline-block";
 
-    msgInst.style.margin = "0";
-    msgInst.style.padding = "5px";
+    msgInst.style.margin = "6px";
+    msgInst.style.padding = "0";
+    msgInst.style.display = "inline-block";
+    msgInst.style.width = "55%";
+
+    btnContainer.style.display = "inline-block";
+    btnContainer.style.float = "right";
+    btnContainer.style.width = "32%";
+    btnContainer.style.height = "100%";
 
     updateBtnInst.style.float = "right";
-    updateBtnInst.style.verticalAlign = "middle";
+    updateBtnInst.style.margin = "5px";
+    updateBtnInst.style.display = "inline-block";
 
     deleteBtnInst.style.float = "right";
+    deleteBtnInst.style.margin = "5px";
+    deleteBtnInst.style.display = "inline-block";
   };
 
   this.render = function()
   {
     this.msgContainer.appendChild(this.message);
-    this.msgContainer.appendChild(updateBtn);
-    this.msgContainer.appendChild(deleteBtn);
+
+    btnContainer.appendChild(updateBtn);
+    btnContainer.appendChild(deleteBtn);
+
+    this.msgContainer.appendChild(btnContainer);
 
     this.addEventListeners();
     this.addStyles();
