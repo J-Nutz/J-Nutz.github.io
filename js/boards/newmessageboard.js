@@ -1,4 +1,4 @@
-function MessageBoard()
+function NewMessageBoard()
 {
   this.pinnedMsgs = [];
   this.todaysMsgs = [];
@@ -6,24 +6,25 @@ function MessageBoard()
 
   this.addMessage = function(msg)
   {
-    this.todaysMsgs.push(new Message(msg));
+    this.todaysMsgs.push(new NewMessage(msg));
     this.render();
   };
 
   this.updateMessage = function()
   {
-    
+
   };
 
   this.render = function()
   {
     for(var i = 0; i < this.todaysMsgs.length; i++)
     {
-      var msg = this.todaysMsgs[i];
+      var message = this.todaysMsgs[i];
       var messagesList = document.getElementById("messagesList");
 
-      messagesList.insertBefore(msg.getMessage(), messagesList.firstChild);
-      msg.applyStyle();
+      message.setIDS("msg" + i);
+      messagesList.appendChild(message.msgContainer);
+      message.render();
     }
   };
 }

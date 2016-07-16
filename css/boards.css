@@ -147,7 +147,7 @@ li a, .dropbtn {
 
 
 
-#mbContainer {
+#boardsContainer {
   display:flex;
 }
 
@@ -169,5 +169,6 @@ li a, .dropbtn {
 }
 
 #messagesList {
-  list-style-type: none;
+  overflow-x: hidden;
+  width: 100%;
 }

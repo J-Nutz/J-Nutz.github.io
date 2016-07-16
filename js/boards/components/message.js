@@ -1,7 +1,7 @@
 function Message(text)
 {
   this.text = text;
-  this.msgElement = document.createElement("LI");
+  this.msgElement = document.createElement("li");
   this.msgContent = document.createTextNode(this.text);
   this.msgElement.appendChild(this.msgContent);
   this.msgElement.id = this.text;
