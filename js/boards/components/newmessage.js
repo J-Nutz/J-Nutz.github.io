@@ -68,10 +68,12 @@ function NewMessage(text)
 
     updateBtnInst.style.float = "right";
     updateBtnInst.style.margin = "5px";
+    updateBtnInst.style.width = "40%";
     updateBtnInst.style.display = "inline-block";
 
     deleteBtnInst.style.float = "right";
     deleteBtnInst.style.margin = "5px";
+    deleteBtnInst.style.width = "40%";
     deleteBtnInst.style.display = "inline-block";
   };
 
