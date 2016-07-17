@@ -59,11 +59,11 @@ function NewMessage(text)
     msgInst.style.margin = "6px";
     msgInst.style.padding = "0";
     msgInst.style.display = "inline-block";
-    msgInst.style.width = "55%";
+    msgInst.style.width = "50%";
 
     btnContainer.style.display = "inline-block";
     btnContainer.style.float = "right";
-    btnContainer.style.width = "32%";
+    btnContainer.style.width = "40%";
     btnContainer.style.height = "100%";
 
     updateBtnInst.style.float = "right";

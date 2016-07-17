@@ -3,13 +3,13 @@
   text-align: center;
   font-size: 48px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  padding: 3px 0px 8px, 0px;
+  padding: 3px 0 8px, 0;
 }
 
 #menu {
   width: 100%;
   list-style-type: none;
-  padding: 3px 0px;
+  padding: 3px 0;
   text-align: center;
   background-color: rgb(255, 255, 51);
   border-top: 3px solid black;
@@ -87,7 +87,7 @@ li a, .dropbtn {
 
 #swLabel, #libLabel, #compsLabel {
   color: rgb(51, 102, 255);
-  padding: 5px 0px 3px 8px;
+  padding: 5px 0 3px 8px;
   font-size: 20px;
   font-weight: bold;
   background-color: white;
@@ -95,7 +95,7 @@ li a, .dropbtn {
 
 #smFooter {
   background-color: rgb(255, 255, 51);
-  padding: 5px 0px;
+  padding: 5px 0;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -160,8 +160,8 @@ li a, .dropbtn {
 }
 
 .boardTitle {
-  margin: 0px;
-  padding: 5px 0px;
+  margin: 0;
+  padding: 5px 0;
   width: 100%;
   font-size: x-large;
   text-align: center;
