@@ -152,7 +152,7 @@ li a, .dropbtn {
 }
 
 .mbCategories {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   border: thin solid black;
   margin: 10px;
   clear: both;

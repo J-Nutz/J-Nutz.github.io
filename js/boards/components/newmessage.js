@@ -5,54 +5,17 @@ function NewMessage(text)
   this.message = document.createElement("p");
   this.message.appendChild(document.createTextNode(text));
 
-  var btnContainer = document.createElement("div");
-
-  var updateBtn = document.createElement("button");
-  updateBtn.addEventListener("click", this.updateBtnAction);
-  var updateBtnContent = document.createTextNode("Update");
-  updateBtn.appendChild(updateBtnContent);
-
-  var deleteBtn = document.createElement("button");
-  deleteBtn.addEventListener("click", this.deleteBtnAction);
-  var deleteBtnContent = document.createTextNode("Delete");
-  deleteBtn.appendChild(deleteBtnContent);
-
   this.setIDS = function(id)
   {
     this.id = id;
-    this.message.id = id;
-    this.msgContainer.id = id + "Container";
-    btnContainer.id = id + "BtnContainer";
-    updateBtn.id = id + "UpdateBtn";
-    deleteBtn.id = id + "DeleteBtn";
-  };
-
-  this.updateBtnAction = function()
-  {
-    console.log("Updated");
-  };
-
-  this.deleteBtnAction = function()
-  {
-    console.log("Deleted");
-  };
-
-  this.addEventListeners = function()
-  {
-    var updateBtnInst = document.getElementById(this.id + "UpdateBtn");
-    updateBtnInst.addEventListener("click", this.updateBtnAction);
-
-    var deleteBtnInst = document.getElementById(this.id + "DeleteBtn");
-    deleteBtnInst.addEventListener("click", this.deleteBtnAction);
+    this.message.id = "msg" + id;
+    this.msgContainer.id = "msgContainer" + id;
   };
 
   this.addStyles = function()
   {
-    var msgContainerInst = document.getElementById(this.id + "Container");
-    var msgInst = document.getElementById(this.id);
-    var btnContainerInst = document.getElementById(this.id + "BtnContainer");
-    var updateBtnInst = document.getElementById(this.id + "UpdateBtn");
-    var deleteBtnInst = document.getElementById(this.id + "DeleteBtn");
+    var msgContainerInst = document.getElementById("msgContainer" + this.id);
+    var msgInst = document.getElementById("msg" + this.id);
 
     msgContainerInst.style.margin = "0";
     msgContainerInst.style.padding = "0";
@@ -61,34 +24,12 @@ function NewMessage(text)
     msgInst.style.margin = "0";
     msgInst.style.padding = "6px";
     msgInst.style.display = "inline-block";
-    msgInst.style.width = "100%";
-
-    /*btnContainer.style.display = "inline-block";
-    btnContainer.style.float = "right";
-    btnContainer.style.width = "40%";
-    btnContainer.style.height = "100%";
-
-    updateBtnInst.style.float = "right";
-    updateBtnInst.style.margin = "5px";
-    updateBtnInst.style.width = "40%";
-    updateBtnInst.style.display = "inline-block";
-
-    deleteBtnInst.style.float = "right";
-    deleteBtnInst.style.margin = "5px";
-    deleteBtnInst.style.width = "40%";
-    deleteBtnInst.style.display = "inline-block";*/
+    msgInst.style.width = "95%";
   };
 
   this.render = function()
   {
     this.msgContainer.appendChild(this.message);
-
-    /*btnContainer.appendChild(updateBtn);
-    btnContainer.appendChild(deleteBtn);
-
-    this.msgContainer.appendChild(btnContainer);*/
-
-    //this.addEventListeners();
     this.addStyles();
   };
 }
