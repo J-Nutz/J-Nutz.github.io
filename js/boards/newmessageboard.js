@@ -1,24 +1,24 @@
 function NewMessageBoard()
 {
-  this.pinnedMsgs = [];
-  this.todaysMsgs = [];
-  this.weeklyMsgs = [];
+  var pinnedMsgs = [];
+  var todaysMsgs = [];
+  var weeklyMsgs = [];
 
   this.addMessage = function(msg, pin)
   {
     if (pin)
     {
-      this.pinnedMsgs.push(new NewMessage(msg));
+      pinnedMsgs.push(new NewMessage(msg));
     }
     else
     {
-      this.todaysMsgs.push(new NewMessage(msg));
+      todaysMsgs.push(new NewMessage(msg));
     }
 
     this.render();
   };
 
-  this.updateMessage = function()
+  this.updateMessage = function(type, index)
   {
 
   };
@@ -27,29 +27,29 @@ function NewMessageBoard()
   {
     this.messagesList = document.getElementById("messagesList");
 
-    for(var pml = 0; pml < this.pinnedMsgs.length; pml++)
+    for(var pml = 0; pml < pinnedMsgs.length; pml++)
     {
-      var pmlMsg = this.pinnedMsgs[pml];
+      var pmlMsg = pinnedMsgs[pml];
 
-      pmlMsg.setIDS("Pinned" + pml);
+      pmlMsg.setID("Pinned" + pml);
       this.messagesList.appendChild(pmlMsg.msgContainer);
       pmlMsg.render();
     }
 
-    for(var tml = 0; tml < this.todaysMsgs.length; tml++)
+    for(var tml = 0; tml < todaysMsgs.length; tml++)
     {
-      var tmlMsg = this.todaysMsgs[tml];
+      var tmlMsg = todaysMsgs[tml];
 
-      tmlMsg.setIDS("Today" + tml);
+      tmlMsg.setID("Today" + tml);
       this.messagesList.appendChild(tmlMsg.msgContainer);
       tmlMsg.render();
     }
 
-    for(var wml = 0; wml < this.weeklyMsgs.length; wml++)
+    for(var wml = 0; wml < weeklyMsgs.length; wml++)
     {
-      var wmlMsg = this.weeklyMsgs[wml];
+      var wmlMsg = weeklyMsgs[wml];
 
-      wmlMsg.setIDS("Weekly" + wml);
+      wmlMsg.setID("Weekly" + wml);
       this.messagesList.appendChild(wmlMsg.msgContainer);
       wmlMsg.render();
     }

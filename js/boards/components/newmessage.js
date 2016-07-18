@@ -1,11 +1,17 @@
 function NewMessage(text)
 {
+  var createElementWithText = function(type, text)
+  {
+    var element = document.createElement(type);
+    element.appendChild(document.createTextNode(text));
+
+    return element;
+  };
+
   this.msgContainer = document.createElement("div");
+  this.message = createElementWithText("p", text);
 
-  this.message = document.createElement("p");
-  this.message.appendChild(document.createTextNode(text));
-
-  this.setIDS = function(id)
+  this.setID = function(id)
   {
     this.id = id;
     this.message.id = "msg" + id;
@@ -31,4 +37,5 @@ function NewMessage(text)
     this.msgContainer.appendChild(this.message);
     this.addStyles();
   };
+
 }
