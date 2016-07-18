@@ -97,6 +97,7 @@ li a, .dropbtn {
   font-weight: bold;
   background-color: white;
   margin: 0;
+  cursor: default;
 }
 
 #smFooter {

@@ -24,7 +24,6 @@ function NewMessage(text)
     msgInst.style.margin = "0";
     msgInst.style.padding = "6px";
     msgInst.style.display = "inline-block";
-    msgInst.style.width = "95%";
   };
 
   this.render = function()
