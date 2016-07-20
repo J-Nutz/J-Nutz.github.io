@@ -1,18 +1,18 @@
-function NewMessageBoard()
+function MessageBoard()
 {
   var pinnedMsgs = [];
   var todaysMsgs = [];
   var weeklyMsgs = [];
 
-  this.addMessage = function(msg, pin)
+  this.addMessage = function(msg, type)
   {
-    if (pin)
+    if(type.equals("pin"))
     {
-      pinnedMsgs.push(new NewMessage(msg));
+      pinnedMsgs.push(new Message(msg, "pin"));
     }
     else
     {
-      todaysMsgs.push(new NewMessage(msg));
+      todaysMsgs.push(new Message(msg));
     }
 
     this.render();

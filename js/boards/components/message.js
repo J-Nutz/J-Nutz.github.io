@@ -1,4 +1,4 @@
-function NewMessage(text)
+function Message(text)
 {
   var createElementWithText = function(type, text)
   {
